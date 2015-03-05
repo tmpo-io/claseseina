@@ -11,3 +11,15 @@ Este repositorio contiene los materiales de la asignatura de Introducción a la 
 
 #### Presentación clase 4
 [clase 4](clase4.md)
+
+
+#### Trucos y enlaces
+
+Código utf8 para páginas
+
+```php
+// html
+<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+// php
+header('Content-Type: text/html; charset=utf-8');
+```
