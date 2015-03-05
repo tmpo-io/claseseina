@@ -10,4 +10,4 @@ Este repositorio contiene los materiales de la asignatura de Introducción a la 
 [clase_2-3.pdf](clase_2-3.pdf)
 
 #### Presentación clase 4
-[clase 4](blob/master/clase4.md)
+[clase 4](clase4.md)
