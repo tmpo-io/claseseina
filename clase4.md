@@ -159,7 +159,7 @@ pero estos parámetros se pueden recojer mediante un formulario html.
 	<input type="number" name="valor2" />
 	<button type="submit">Sumar</button>
 </form>
-'''
+```
 
 Al ejecutarse, nuestro php, recibirá los parámetros:
 
