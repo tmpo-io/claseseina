@@ -71,4 +71,26 @@ http://php.net/manual/es/function.include.php
 ```
 Nos permite incluir un archivo externo.
 
+Ejemplo:
 
+> clase4/ejercicio1.php
+```php
+<?php
+include "menu1.php";
+?>
+<h1>Página número 1</h1>
+```
+
+> clase4/ejercicio2.php
+```php
+<?php
+include "menu1.php";
+?>
+<h1>Página número 2</h1>
+```
+
+> clase4/menu1.php
+```php
+<li><a href="ejercicio1.php">Ejercicio 1</a></li>
+<li><a href="ejercicio2.php">Ejercicio 2</a></li>
+```
