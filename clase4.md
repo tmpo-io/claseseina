@@ -151,12 +151,44 @@ del contenido que le pasemos como parámetro GET.
 Hemos aprendido a leer parámetros mediante GET, y las urls del navegador, 
 pero estos parámetros se pueden recojer mediante un formulario html.
 
-<form >
+```php
+<form action="">
 	<label>Valor 1</label>
 	<input type="number" name="valor1" />
 	<label>Valor 2</label>
 	<input type="number" name="valor2" />
 	<button type="submit">Sumar</button>
 </form>
+'''
 
+Al ejecutarse, nuestro php, recibirá los parámetros:
+
+- $_GET['valor1']
+- $_GET['valor2']
+
+Y podremos actuar en consecuéncia.
+
+##### ¿Como podemos saber si una variable GET está definida?
+
+```php
+<?php
+if( isset($_GET['var1']) === true ) {
+	// la variable 1 existe
+} else {
+	// La variable 1 no existe
+}
+?>
+```
+
+#### Ejercicio 4
+
+Vamos a construir la calculadora de descuentos de la sesión anterior, pero 
+usando un formulario.
+
+> calculadora/index.php
+> calculadora/formulario.php
+
+1. Creamos la carpeta y el archivo correspondiente
+2. Haremos un include del formulario.php
+3. Si existe la variable get con el resultado lo mostraremos de forma visual
 
