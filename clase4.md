@@ -111,6 +111,8 @@ Vamos a contruir nuestro portafolio, usando 3 tipos de proyectos
 3. La página indice contendrá acceso a las tres categorías
 4. El menú será compartido entre las tres páginas de proyectos.
 
+*Este ejercicio lo subiremos al ftp de CDMON*
+
 
 #### Ejercicio 2
 
