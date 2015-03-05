@@ -1,9 +1,11 @@
 <?php
+// Ejercicio 5 5/3/2015
 $v1 = $v2 = "";
 if(isset($_GET["valor1"])) {
     $v1 = $_GET["valor1"];
     $v2 = $_GET["valor2"];
 }
+// Otra
 ?>
 <form action="" method="GET">
     <label>Valor 1</label>
