@@ -100,15 +100,37 @@ include "menu1.php";
 Vamos a contruir nuestro portafolio, usando 3 tipos de proyectos
 (3 páginas) y construiremos un menú común.
 
-> portafolio/index.php
-> portafolio/menu.php
-> portafolio/proyectos_grafico.php
-> portafolio/proyectos_motion.php
-> portafolio/proyectos_web.php
+> portafolio/index.php<br/>
+> portafolio/menu.php<br/>
+> portafolio/proyectos_grafico.php<br/>
+> portafolio/proyectos_motion.php<br/>
+> portafolio/proyectos_web.php<br/>
 
 1. Para empezar crearemos una carpeta portafolio.
 2. Los tres tipos de proyecos serán Diseño Gráfico / Motion Grafics y Diseño web
 3. La página indice contendrá acceso a las tres categorías
 4. El menú será compartido entre las tres páginas de proyectos.
+
+
+#### Ejercicio 2
+
+Crearemos una sola página que en función de la hora del día, nos muestre una cabecera u otra.
+
+- Para la mañana ( antes de las 12pm ) 
+- Para la tarde ( antes de las 19pm )
+- Para la noche
+
+> horadia/index.php
+
+1. Crearemos la carpeta hora dia
+2. Archivo indice
+
+```php
+<?php if($horadia) { ?>
+<h1>codigo html</h1>
+<?php } else { ?>
+<h1>otro html</h1>
+<?php } ?>
+```
 
 
