@@ -94,3 +94,21 @@ include "menu1.php";
 <li><a href="ejercicio1.php">Ejercicio 1</a></li>
 <li><a href="ejercicio2.php">Ejercicio 2</a></li>
 ```
+
+#### Ejercicio 1
+
+Vamos a contruir nuestro portafolio, usando 3 tipos de proyectos
+(3 páginas) y construiremos un menú común.
+
+> portafolio/index.php
+> portafolio/menu.php
+> portafolio/proyectos_grafico.php
+> portafolio/proyectos_motion.php
+> portafolio/proyectos_web.php
+
+1. Para empezar crearemos una carpeta portafolio.
+2. Los tres tipos de proyecos serán Diseño Gráfico / Motion Grafics y Diseño web
+3. La página indice contendrá acceso a las tres categorías
+4. El menú será compartido entre las tres páginas de proyectos.
+
+
