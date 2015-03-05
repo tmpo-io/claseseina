@@ -133,4 +133,30 @@ Crearemos una sola página que en función de la hora del día, nos muestre una 
 <?php } ?>
 ```
 
+#### Ejercicio 3 (Extra)
+
+Crearemos una página que nos muestre un include en función 
+del contenido que le pasemos como parámetro GET.
+
+> get/ejercicio.php
+
+1. Si $_GET['seccion'] == 'home'
+2. include "trozo_home.php"
+3. Si $_GET['seccion] == 'pagina1'
+4. include "trozo_pag1.php"
+
+
+### FORMULARIOS
+
+Hemos aprendido a leer parámetros mediante GET, y las urls del navegador, 
+pero estos parámetros se pueden recojer mediante un formulario html.
+
+<form >
+	<label>Valor 1</label>
+	<input type="number" name="valor1" />
+	<label>Valor 2</label>
+	<input type="number" name="valor2" />
+	<button type="submit">Sumar</button>
+</form>
+
 
