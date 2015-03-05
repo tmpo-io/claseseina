@@ -56,7 +56,9 @@ $b = $_GET['b'];
 $c = $_GET['c'];
 
 * Cliente/Servidor
-
 ![Esquema](./clase4/cliente_servidor.png)
 
+### PHP Includes
+http://php.net/manual/es/function.include.php
+*La sentencia include incluye y evalúa el archivo especificado.*
 
