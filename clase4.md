@@ -48,17 +48,27 @@ if($a < 5) {
 * Recojer variables por parámetros
 
 http://localhost/?variable=1
+```php
 $variable = $_GET['variable'];
+```
 
 http://localhost/?a=1&b=2&c=3
+```php
 $a = $_GET['a'];
 $b = $_GET['b'];
 $c = $_GET['c'];
+```
 
 * Cliente/Servidor
 ![Esquema](./clase4/cliente_servidor.png)
 
 ### PHP Includes
 http://php.net/manual/es/function.include.php
-*La sentencia include incluye y evalúa el archivo especificado.*
+
+**La sentencia include incluye y evalúa el archivo especificado.**
+```php
+<?php include "archivo.php" ?>
+```
+Nos permite incluir un archivo externo.
+
 
