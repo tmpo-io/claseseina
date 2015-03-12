@@ -136,3 +136,7 @@ rand ( int $min , int $max )
 ```
 que nos devuelve un número aleatorio entre el rango especificado.
 
+
+### What happens when you type google in address bar?
+https://github.com/alex/what-happens-when/blob/master/README.rst
+
