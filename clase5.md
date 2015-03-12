@@ -14,8 +14,7 @@ if($a == "clase") {
 }
 
 $_GET['v1']
-
-´´´
+```
 
 * Servidor / Cliente
 * Javascript / PHP
