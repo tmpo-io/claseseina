@@ -8,7 +8,7 @@ $lista = array(1,2,3,4,5);
 foreach($lista as $ele) {
     echo $ele*3;
 }
-
+```
 ```php
 shuffle($lista);
 foreach($lista as $ele) {
