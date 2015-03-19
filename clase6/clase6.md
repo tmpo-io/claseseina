@@ -29,7 +29,7 @@ echo $aleatorio;
 
 ##### Ejercicio 1
 
-Construiremos un listado de proyectos con los títulos de proyecto en una lista. El listado de proyectos tiene que ser un div en html para cada proyecto + una imagen.
+Construiremos un listado de proyectos con los títulos de proyecto en una lista. El listado de proyectos tiene que ser un div en html para cada proyecto + una imagen. ( función foreach )
 
 
 ##### Ejercicio 2
@@ -83,9 +83,5 @@ foreach($lista as $proyecto) {
 
 ##### Ejercicio 4
 Construye un listado para tu portfolio con titulos, descripición, imagenes, urls y fechas de los proyectos.
-
-
-
-
 
 
