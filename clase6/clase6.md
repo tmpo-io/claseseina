@@ -14,17 +14,17 @@ shuffle($lista);
 foreach($lista as $ele) {
     echo $ele*3;
 }
-
+```
 ```php
 $resultado = array_sum( $lista );
 echo $resultado;
-
+```
 ```php
 $inicio = 1;
 $final = 999;
 $aleatorio = rand ( $inicio , $final );
 echo $aleatorio;
-
+```
 
 
 ##### Ejercicio 1
@@ -50,7 +50,7 @@ $mapa = array(
 );
 
 echo $mapa["clave_1"] ;
-
+```
 
 ##### Ejercicio 3
 
@@ -79,7 +79,7 @@ foreach($lista as $proyecto) {
 	echo $proyecto["titulo"];
 	echo $proyecto["img"] ;
 }
-
+```
 
 ##### Ejercicio 4
 Construye un listado para tu portfolio con titulos, descripición, imagenes, urls y fechas de los proyectos.
