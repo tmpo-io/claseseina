@@ -19,6 +19,9 @@ Este repositorio contiene los materiales de la asignatura de Introducción a la 
 #### Presentación clase 6
 [clase 6](clase6.md)
 
+#### Presentación clase 7
+[clase 7](clase7.md)
+
 #### Trucos y enlaces
 
 Código utf8 para páginas
