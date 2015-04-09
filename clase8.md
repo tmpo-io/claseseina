@@ -25,7 +25,7 @@ nombre_funcion($variable1, $variable2);
 ```
 ##### Ejercicio 4 clase 7
 
-Vamos a contruir una calculadora que tenga las operaciones básicas:
+Vamos a construir una calculadora que tenga las operaciones básicas:
 
 1. Sumar
 2. Restar
@@ -68,7 +68,7 @@ EL javascript se puede incluir externamente a partis de archivos .js o dentro de
 ```
 ###TIPS
 
-- No es necesario utilizar ; al final de linia
+- No es necesario utilizar ; al final de línea
 - Para concatenar cadenas y variables se utiliza el + y no el punto
 - Las variables no tienen que empezar por $
 
@@ -90,7 +90,7 @@ document.getElementById("id_etiqueta").innerHTML = "Contenido dentro de la etiqu
 ```
 
 ####Variables
-Las variables no deben empezar con el simbolo $ y al final de linia ; no es necesario.
+Las variables no deben empezar con el símbolo $ y al final de línea ; no es necesario.
 ```javascript
 <script>
 var variable1 = "una variable string"
@@ -141,6 +141,64 @@ for(key in mapa) {
   alert("el contenido: "+ mapa[key])
 }
 </script>
+```
 
+####Interval
+
+Un interval es una función de javascript que te permite hacer una acción cada X milisegundos.
+
+```javascript
+
+function funcion_interval () {
+  //acciones q se ejecutaran
+}
+
+mi_interval = setInterval(funcion_interval, 3000)
+```
+##### Ejercicio 1
+Crea un grid de divs de diferentes colores que cada X segundos vaya añadiendo nuevos elementos.
+
+
+###jQuery
+
+jQuery es una librería de javascript que permite la manipulación de elementos html, gestión de eventos, AJAX y animaciones de una forma sencilla y transversal para todos los navegadores.
+
+Para utilizar jQuery se debe incluir la librería
+```javascript
+<script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+<script>
+$(document).ready(function () {
+  //Código javascript 
+})
+</script>
+```
+
+#### Selección de elementos
+
+Manipulación de etiquetas html, funciona con el mismo sistema de selección que CSS
+
+```javascript
+$("#etiqueta_id").html("contenido dentro de la id")
+
+$(".etiqueta_clase").html("contenido dentro de la classe")
+
+$("p").html("contenido dentro de una etiqueta p")
+```
+
+##### Edición de propiedades
+```javascript
+//modifica propiedades css de una etiqueta
+$(".classe").css({
+  "width": "300px",
+  "background-color": "red",
+});
+
+//sistema de mostrar y esconder etiquetas con display:none;
+$(".classe").hide();
+$(".classe").show();
+```
+
+##### Ejercicio 2
+Crea un player de imágenes automático
 
 
