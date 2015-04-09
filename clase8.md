@@ -202,3 +202,17 @@ $(".classe").show();
 Crea un player de imágenes automático
 
 
+##### Eventos
+Un evento es algo que desencadena una acción especifica en el navegador, cuando haces click, cuando se carga la página, hover, etc.
+
+```javascript
+//registar una función cuando se clicka en un elemento
+function boton_clicado() {
+  alert("el botón se ha clicado")
+}
+
+$(".classe").click(boton_clicado)
+```
+##### Ejercicio 3
+Recicla el ejercicio anterior eliminando el pase automática y añadiendo unos botones de next / prev.
+
