@@ -111,5 +111,5 @@ Inicializamos los tabs
 
 #### Estructura del html
 - Un div contenedor de los tabs y del menu
-- Un menu de ul y con elementos li
+- Un menu de ul con elementos li
 - un div contenido para cada tab
