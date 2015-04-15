@@ -93,7 +93,7 @@ Permite crear un sistema de tabs
 url: http://os.alfajango.com/easytabs/
 
 Javascripts que debemos incluir al documento
-```javascripts
+```javascript
 <script src="/javascripts/jquery.js" type="text/javascript"></script> 
 <script src="/javascripts/jquery.hashchange.js" type="text/javascript"></script> 
 <script src="/javascripts/jquery.easytabs.js" type="text/javascript"></script>  
@@ -101,7 +101,7 @@ Javascripts que debemos incluir al documento
 ```
 
 Inicializamos los tabs
-```javascripts
+```javascript
 <script type="text/javascript"> 
   $(document).ready(function(){ 
     $('#tab-container').easytabs(); 
