@@ -59,3 +59,30 @@ lista_img = ["img/img1.jpg", "img/img2.jpg", "img/img3.jpg"]
 AYUDA: 
  - La propiedad que se debe actualizar de una etiqueta img es src
  - Necesitaremos una variable que se vaya incrementado cada vez que se hace click.
+
+
+### Plugins de Jquery
+Los plugins de jQuery son componentes que nos permiten implementar de una manera sencilla funcionalidades complejas.
+
+### Lightbox
+
+Url del plugin
+http://lokeshdhakar.com/projects/lightbox2/
+
+Javascripts que debemos incluir al documento
+```javascript
+<script src="js/jquery-1.11.0.min.js"></script>
+<script src="js/lightbox.min.js"></script>
+```
+```html
+<link href="css/lightbox.css" rel="stylesheet" />
+```
+Inicializamos el lightbox
+```html
+<a href="img/image-1.jpg" data-lightbox="image-1" data-title="My caption">Image #1</a>
+```
+
+#### Propiedades
+
+- data-lightbox Identificador por si necesitamos mas de una galeria en la misma pagina
+- data-title Añadir un título a la imagen
