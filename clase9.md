@@ -123,13 +123,27 @@ Javascripts que debemos incluir al documento
 ```javascript
 <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
 <script type="text/javascript" src="jquery.onepage-scroll.js"></script>
+<link href='onepage-scroll.css' rel='stylesheet' type='text/css'>
 ```
 
 Inicializamos
 ```javascript
 <script type="text/javascript"> 
   $(document).ready(function(){ 
-    $('#tab-container').easytabs(); 
+    $(".onepage-wrapper").onepage_scroll(); 
   });
 </script>
 ```
+
+#### Estructura del html
+```html
+<div class="onepage-wrapper">
+    <section class="section page1">
+    </section>
+    <section class="section page2">
+    </section>
+    <section class="section page3">
+    </section>
+</div>
+```
+
