@@ -113,3 +113,23 @@ Inicializamos los tabs
 - Un div contenedor de los tabs y del menu
 - Un menu de ul con elementos li
 - un div contenido para cada tab
+
+
+### OnePageScroll
+Url: http://www.thepetedesign.com/demos/onepage_scroll_demo.html
+
+
+Javascripts que debemos incluir al documento
+```javascript
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
+<script type="text/javascript" src="jquery.onepage-scroll.js"></script>
+```
+
+Inicializamos
+```javascript
+<script type="text/javascript"> 
+  $(document).ready(function(){ 
+    $('#tab-container').easytabs(); 
+  });
+</script>
+```
