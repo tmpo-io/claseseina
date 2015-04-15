@@ -101,11 +101,13 @@ Javascripts que debemos incluir al documento
 ```
 
 Inicializamos los tabs
+```javascripts
 <script type="text/javascript"> 
   $(document).ready(function(){ 
     $('#tab-container').easytabs(); 
   });
 </script>
+```
 
 #### Estructura del html
 - Un div contenedor de los tabs y del menu
