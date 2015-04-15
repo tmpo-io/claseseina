@@ -86,3 +86,48 @@ Inicializamos el lightbox
 
 - data-lightbox Identificador por si necesitamos mas de una galeria en la misma pagina
 - data-title Añadir un título a la imagen
+
+### Easy Tabs
+
+Permite crear un sistema de tabs
+url: http://os.alfajango.com/easytabs/
+
+Javascripts que debemos incluir al documento
+```javascripts
+<script src="/javascripts/jquery.js" type="text/javascript"></script> 
+<script src="/javascripts/jquery.hashchange.js" type="text/javascript"></script> 
+<script src="/javascripts/jquery.easytabs.js" type="text/javascript"></script>  
+
+```
+
+Inicializamos los tabs
+<script type="text/javascript"> 
+  $(document).ready(function(){ 
+    $('#tab-container').easytabs(); 
+  });
+</script>
+
+#### Estructura del html
+
++---------------------------------------------------------------------------+
+|                              div#tab-container                            |
+|  +---------------------------------------------------------------------+  |
+|  |                                  ul                                 |  |
+|  |  +-----------------------------+    +----------------------------+  |  |
+|  |  |             li              |    |             li             |  |  |
+|  |  |  +-----------------------+  |    |  +----------------------+  |  |  |
+|  |  |  |    a[href="tab-1"]    |  |    |  | a[href="second-tab"] |  |  |  |
+|  |  |  +-----------------------+  |    |  +----------------------+  |  |  |
+|  |  +-----------------------------+    +----------------------------+  |  |
+|  +---------------------------------------------------------------------+  |
+|                                                                           |
+|  +---------------------------------------------------------------------+  |
+|  |                               div#tab-1                             |  |
+|  +---------------------------------------------------------------------+  |
+|                                                                           |
+|  +---------------------------------------------------------------------+  |
+|  |                             div#second-tab                          |  |
+|  +---------------------------------------------------------------------+  |
+|                                                                           |
++---------------------------------------------------------------------------+
+
