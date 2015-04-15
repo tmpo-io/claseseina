@@ -28,6 +28,9 @@ $(".classe").css({
   "background-color": "red",
 });
 
+//modificar la ruta de una imagen
+$(".classe").attr("src", "nueva_ruta.jpg")
+
 //sistema de mostrar y esconder etiquetas con display:none;
 $(".classe").hide();
 $(".classe").show();
@@ -35,6 +38,7 @@ $(".classe").show();
 
 ##### Eventos
 Es algo que desencadena una acción, permitiendonos programar una serie de acciones que se ejecutaran cuando el evento sea llamado
+
 Los principales eventos son:
 - click
 - mouseover / mouseout
@@ -47,6 +51,11 @@ $(".clase_click").click(function () {
   alert("elemento clickado")
 })
 ```
-
-
-
+##### Ejercicio 1
+Dada una lista de imagenes crea un botón que vaya cambiado la imagen al ser clickada.
+```javascript
+lista_img = ["img/img1.jpg", "img/img2.jpg", "img/img3.jpg"]
+```
+AYUDA: 
+ - La propiedad que se debe actualizar de una etiqueta img es src
+ - Necesitaremos una variable que se vaya incrementado cada vez que se hace click.
