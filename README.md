@@ -22,6 +22,12 @@ Este repositorio contiene los materiales de la asignatura de Introducción a la 
 #### Presentación clase 7
 [clase 7](clase7.md)
 
+#### Presentación clase 8
+[clase 8](clase8.md)
+
+#### Presentación clase 9
+[clase 9](clase9.md)
+
 #### Trucos y enlaces
 
 Código utf8 para páginas
