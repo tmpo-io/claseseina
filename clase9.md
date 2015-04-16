@@ -52,7 +52,7 @@ $(".clase_click").click(function () {
 })
 ```
 ##### Ejercicio 1
-Dada una lista de imagenes crea un botón que vaya cambiado la imagen al ser clickada.
+Dada una lista de imágenes crea un botón que vaya cambiado la imagen al ser clickada.
 ```javascript
 lista_img = ["img/img1.jpg", "img/img2.jpg", "img/img3.jpg"]
 ```
@@ -84,7 +84,7 @@ Inicializamos el lightbox
 
 #### Propiedades
 
-- data-lightbox Identificador por si necesitamos mas de una galeria en la misma pagina
+- data-lightbox Identificador por si necesitamos mas de una galería en la misma pagina
 - data-title Añadir un título a la imagen
 
 ### Easy Tabs
@@ -110,7 +110,7 @@ Inicializamos los tabs
 ```
 
 #### Estructura del html
-- Un div contenedor de los tabs y del menu
+- Un div contenedor de los tabs y del menú
 - Un menu de ul con elementos li
 - un div contenido para cada tab
 
