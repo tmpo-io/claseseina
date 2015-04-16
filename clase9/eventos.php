@@ -4,7 +4,6 @@
 <script src="jquery.js"></script>
 <script>
 $(document).ready(function () {
-	
 	$("div").click(function () {
 
 		$("div").css({
@@ -12,7 +11,7 @@ $(document).ready(function () {
 		});
 
 	})
-
+	
 	$("div").mouseover(function () {
 
 		$("div").css({
@@ -24,6 +23,10 @@ $(document).ready(function () {
 	$(window).resize(function () {
 		alert("cambio de medida");
 	});
+
+	$("#img_externa").load(function () {
+		alert("img ok")
+	})
 
 });
 </script>
@@ -45,5 +48,21 @@ div {
 </head>
 <body>
 <div></div>
+<img id="img_externa" src="http://placehold.it/450x150" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </body>
 </html>
