@@ -54,6 +54,8 @@ function GetImages($path, $only_one=false) {
 	return $res;
 }
 
+// Devuelve un mapa[path]imagen
+// Para poder generar la lista de imagenes de nuestras galerias.
 
 function GetImageForDir($path) {
 	$dirs = GetDirs($path);
@@ -74,6 +76,25 @@ function GetImageForDir($path) {
 }
 
 
+// Comprueba si una carpeta "proyecto" contiene un archivo de data, 
+// que haya que adjuntar al proyecto...
+
+function HasData($dir) {
+
+	// normalize path
+	if( !startsWith($dir, "/") ) {
+		$currentPath = dirname(__FILE__);
+		$dir = $currentPath . DIRECTORY_SEPARATOR . $dir;
+	}
+	
+	if( file_exists( $dir . "/data.php" ) ) 
+		return true;
+	
+	return false;
+
+}
+
+
 
 function endsWith($haystack, $needle) {
     // search forward starting from end minus needle length characters
@@ -82,9 +103,14 @@ function endsWith($haystack, $needle) {
     		strpos($haystack, $needle, $temp) !== FALSE);
 }
 
+function startsWith($haystack, $needle) {
+    // search backwards starting from haystack length characters from the end
+    return $needle === "" || strrpos($haystack, $needle, -strlen($haystack)) !== FALSE;
+}
+
+
 
 /*
-
 echo "Dirname: " . dirname(__FILE__);
 
 echo "dirs: " . join(", ", GetDirs('/home/jordi/')) . "\n";
@@ -99,5 +125,7 @@ $desktop = GetImageForDir( '/home/jordi/Escriptori/' );
 var_dump( $desktop );
 
 echo "\n";
+
+var_dump( HasData( 'test' ) );
 
 */
