@@ -1,0 +1,65 @@
+
+<html>
+<head>
+<style>
+* {
+	margin:0;
+	padding:0;
+}
+#menu {
+}
+/*ELEMENTOS PRINCIPALES*/
+#menu > li {
+	position:relative;
+	display:inline-block;
+	padding:10px 20px;
+}
+#menu ul {
+	position:absolute;
+	top:0;
+	left:0;
+	width:600px;
+	padding-top:30px;
+	display:none;
+}
+/*SUB-ELEMENTOS*/
+#menu ul li {
+	
+	display:inline-block;
+	padding:10px 20px;
+}
+#menu > li:hover ul {
+	display:block;
+}
+</style>
+</head>
+<body>
+
+	<ul id="menu">
+		<li>
+			<a href="">Item 1</a>
+			<ul>
+				<li><a href="">Sub item 1</a></li>
+				<li><a href="">Sub item 2</a></li>
+				<li><a href="">Sub item 3</a></li>
+			</ul>
+		</li>
+		<li>
+			<a href="">Item 2</a>
+			<ul>
+				<li><a href="">Sub item 1</a></li>
+				<li><a href="">Sub item 2</a></li>
+				<li><a href="">Sub item 3</a></li>
+			</ul>
+		</li>
+		<li>
+			<a href="">Item 3</a>
+			<ul>
+				<li><a href="">Sub item 1</a></li>
+				<li><a href="">Sub item 2</a></li>
+				<li><a href="">Sub item 3</a></li>
+			</ul>
+		</li>
+	</ul>
+</body>
+</html>
