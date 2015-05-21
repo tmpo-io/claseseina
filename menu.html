@@ -71,10 +71,6 @@ nav {
 		display:none;
 		
 	}
-
-	.menu-opened #menu {
-		display:block;
-	}
 	#menu li {
 		display:block;
 		border-top:1px solid #fff;
@@ -116,7 +112,6 @@ nav {
 <script>
 $(document).ready(function () {
 	$("#menu-mobile").click(function () {
-//		$("body").toggleClass("menu-opened")
 		
 		if($("#menu").is(":visible")) {
 			$("#menu").slideUp();
