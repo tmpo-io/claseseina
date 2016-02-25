@@ -8,7 +8,7 @@
 - Sabemos la diferencia entre == y ===
 - Sabemos que es un condicional
 
-```
+```javascript
 if(a < 1) {
     console.log("Muy deficiente")
 } else if(a < 5) {
@@ -39,7 +39,7 @@ Queremos que cada vez que se recargue la página la imágen que carga sea distin
 
 #### Ayuda para el ejercicio
 
-```
+```javascript
 function random(inicio, fin) {
     return Math.floor(Math.random() * fin) + inicio;
 }
@@ -50,13 +50,13 @@ function random(inicio, fin) {
 
 - Una lista en javascript es una variable que puede conenter muchas mas variables
 
-```
+```javascript
 lista = [1,2,3,4]
 nombre = ["jose", "pablo", "marco", "tere"]
 ```
 - Igual que las cadenas de texto, podemos acceder a las listas por indice:
 
-```
+```javascript
 lista[0]
 lista[1]
 ```
@@ -64,7 +64,7 @@ lista[1]
 - Las listas o Arrays, son al mismo tiempo un objeto que puede tener propiedades o 
 métodos
 
-```
+```javascript
 lista.length
 lista.push(4)
 lista.pop()
@@ -75,7 +75,7 @@ lista.sort()
 
 - En un Array en javascript podemos almacenar cualquier tipo de dato
 
-```
+```javascript
 lista = [1,"cadena texto",fale,[1,2,3]]
 ```
 
@@ -86,7 +86,7 @@ y haremos que nos muestre aleatoriamente una imágen de la lista.
 
 ## Bloque for
 
-```
+```javascript
 for(i=0; i<50; i++) {
     document.write("valor de i: ", i)
 }
@@ -106,7 +106,8 @@ for, iteraremos por ella, para saludar a todos los alumnos, con document.write.
 ### Ejercicio 5
 
 Almacenaremos las notas de los alumnos de la clase en una lista, y calcularemos la media.
-```
+
+```javascript
 notas = [10,8,4,7,5,3,2,7,6,6,5,5,4]
 ```
 
@@ -134,7 +135,8 @@ El factorial de 5! es: 5*4*3*2*1
 
 
 Una función que no recibe parámetros y tampoco devuelve:
-```
+
+```javascript
 // definimos la función
 funciton saluda() {
     console.log("hola clase")
@@ -142,8 +144,9 @@ funciton saluda() {
 // la ejecutamos
 saluda()
 ```
+
 Una función que devuelve parámetros
-```
+```javascript
 // Definimos una funcion suma, que suma dos numeros
 function suma(a, b) {
     return a + b
@@ -170,7 +173,7 @@ Crearemos una calculadora que pueda sumar, restar, multiplicar o dividir los val
 los usuarios introduzcan.
 
 
-```
+```html
 <html>
 <head>
 <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
