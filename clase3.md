@@ -49,7 +49,7 @@ function random(inicio, fin) {
 ## Listas (Arrays)
 
 - Una lista en javascript es una variable que puede conenter muchas mas variables
-
+ b b 
 ```javascript
 lista = [1,2,3,4]
 nombre = ["jose", "pablo", "marco", "tere"]
@@ -166,8 +166,12 @@ en el contexto de esta.
 
 Podéis crear una función que realice restas, y otra que multiplque, y otra que divida?
 
-
 ### Ejercicio 9
+
+Somos capaces de convertir el código que nos calculava la media de notas de una lista, 
+en una función?
+
+### Ejercicio 10
 
 Crearemos una calculadora que pueda sumar, restar, multiplicar o dividir los valore que 
 los usuarios introduzcan.
