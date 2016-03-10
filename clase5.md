@@ -94,11 +94,55 @@ $('#selector').on('click', function(){
 });
 ```
 
+Tenemos la lista completa de eventos que admite jQuery aquí:
+https://api.jquery.com/category/events/
+
+
 #### Ejercicio
 
 - Vamos a crear un ejercicio que cada vez que cliquemos en el documento, (en cualquier parte) lance un mensaje. P.e. un alert
 
 - Evolucionaremos el ejercicio para que en lugar de lanzar un alert, nos escriba el mensaje en un div (previamente preparado)
 
-- Finalmente, queremos tener un contador, para las veces que el usuario hace clic en el mensaje.
+- Finalmente, queremos tener un contador de las veces que un usuario hace clic en el mensaje.
 
+
+### Ejercicio Imágenes
+
+- Vamos a construir un pequeño visor de imágenes. Una imagen principal, y una lista de enlaces que nos permitan cambiar esta, al hacer click, y sin recargar la página donde estamos.
+
+```
+div>img
+
+li>Item1
+
+```
+**Pasos**
+
+- Montar el HTML
+- Crear el script y adjuntar la librería jQuery
+- Añadir un id a la imagen para poder referenciarla des de jQuery
+- Añadir el código jQuery base (document.ready)
+- Añadir un selector a los enlaces. 
+- Programar una función que nos cambie la imagen
+- Responder al evento de cambio de imagen
+
+- Lo mejoramos y lo volvemos genérico:
+
+### jQuery: El elemento en curso en un evento
+
+- Al hacer click en un elemento, podemos acceder a él mismo des de jQuery?
+
+```
+$('#el').on('click', function(e){
+    $(this)
+})
+```
+
+- Leer atributos escritos en el elemento (attr)
+
+<img id="i1" src="asdf" opcion="1" />
+
+```
+$('#i1').attr('opcion')
+```
