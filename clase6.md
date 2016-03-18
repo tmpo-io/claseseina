@@ -47,7 +47,7 @@ $('#i1').attr('opcion')
 
 ### Repaso seleccionar elementos del Dom en jQuery
 
-- A groso modo podriamos decir que hay 3 formas de seleccionar elementos en jQuery.
+- A groso modo podríamos decir que hay 3 formas de seleccionar elementos en jQuery.
 (El sistema de selección es exactamente el mismo que en CSS).
 - Por clase la selección empieza por un . $(".nombre_classe")
 - Por id la selección empieza por un # $("#nombre_id")
@@ -62,7 +62,7 @@ Los plugins de jQuery son un conjunto de instrucciones mas o menos complejas rec
 
 Pluguin para jQuery que nos permite crear players de imagenes o contenido, responsive y configurable.
 
-Para utilizar un pluguin de jQuery necesitamos incluir la jQuery y los js/css necesarios especificos del plugin.
+Para utilizar un pluguin de jQuery necesitamos incluir la jQuery y los js/css necesarios específicos del plugin.
 
 ```
 <link rel="stylesheet" type="text/css" href="slick/slick.css" />
@@ -86,7 +86,7 @@ $(document).ready(function () {
 ```
 
 
-Para configurar el plugin Slick se le puede pasar un objecto javascript con las configuraciones especificas.
+Para configurar el plugin Slick se le puede pasar un objeto javascript con las configuraciones especificas.
 
 ```
 <script>
@@ -103,8 +103,7 @@ $(document).ready(function () {
 En la sección settings del plugin tenemos todas las posibilidades del plugin.
 http://kenwheeler.github.io/slick/#settings
 
-
 ### Ejercicio
 
-1- Crear un listado de noticias que cada una de ellas tenga un player.
-2- Crear una cabezera de fotografias con un texto que pasen automaticamente.
+- Crear un listado de noticias que cada una de ellas tenga un player.
+- Crear una cabecera de fotografías con un texto que pasen automáticamente.
