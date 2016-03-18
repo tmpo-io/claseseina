@@ -1,0 +1,33 @@
+body {
+	background-color: #ddd;
+	margin: 0;
+	padding: 0;
+}
+
+/*css por header */
+header {
+	width: 500px;
+	margin:0 auto;
+	background: #fcfcfc;
+	min-height: 150px;
+	padding: 20px;
+}
+
+/*css por id */
+#contenido {
+	border:1px solid #000000;
+	width:500px;
+	min-height: 600px;
+	margin: 0 auto;
+	padding: 20px;
+}
+
+/* css por class */
+.pie {
+	min-height:200px;
+	width:500px;
+	margin:0 auto;
+	background-color: #000;
+	color: #ffffff;
+	padding: 20px;
+}
