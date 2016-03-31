@@ -96,3 +96,7 @@ $(document).ready(function () {
 })
 </script>
 ```
+
+### Ejercicio
+- Crear un microsite de 3 secciones:
+  -- About me, Projects, Contact
