@@ -36,7 +36,6 @@ $('#nav').onePageNav({
 
 
 ### PHP
-### Introducción Javascript
 
 A diferencia del Javascript el PHP es un lenguaje interpretado en el lado del servidor.
 
