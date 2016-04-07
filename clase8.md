@@ -105,9 +105,8 @@ foreach($marcas as $marca) {
 ?>
 ```
 
-```
 ####Function
-Funciones
+
 ```php
 <?php
 
