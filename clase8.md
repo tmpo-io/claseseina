@@ -79,23 +79,9 @@ $marcas = ["Saab", "Volvo", "BMW"];
 ?>
 ```
 
-```php
 ####Foreach
 Loop para Php
-
-<?
-$marcas = ["Saab", "Volvo", "BMW"];
-
-foreach($marcas as $marca) {
-  echo $marca ."<br />";
-}
-?>
-```
-
 ```php
-####Foreach
-Loop para Php
-
 <?
 $marcas = ["Saab", "Volvo", "BMW"];
 
