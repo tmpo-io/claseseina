@@ -5,11 +5,19 @@
 }
 body {
   font-family: 'Lato', sans-serif;
+  padding-bottom: 500px;
 }
 nav {
-  margin: 20px auto 0 auto;
+  position: fixed;
+  top:0;
+  left:0;
+  right:0;
   background: rgba(255, 255, 255, 0.9);
   text-align: center;
+}
+nav ul,
+nav li {
+  display: inline;
 }
 nav a {
   display: inline-block;
@@ -18,6 +26,7 @@ nav a {
   font-weight: 700;
   text-decoration: none;
 }
+nav .current a,
 nav a:hover {
   color: #da3d78;
 }
@@ -25,10 +34,11 @@ nav a:hover {
 section {
   margin: auto;
   background: rgba(255, 255, 255, 0.8);
-  width: 990px;
+  width: 95%;
+  max-width: 990px;
   min-height: 400px;
-  margin-top: 40px;
-  padding: 20px;
+  margin-top: 50px;
+  padding: 60px 20px 20px 20px;
   overflow: auto;
   zoom: 1;
 }
