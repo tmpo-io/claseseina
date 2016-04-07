@@ -114,4 +114,4 @@ Funciones
 function saluda() {
   echo " Saluda";
 }
-<?
+?>
