@@ -79,11 +79,10 @@ $marcas = ["Saab", "Volvo", "BMW"];
 ?>
 ```
 
-```
 ####Foreach
 Loop para Php
 ```php
-<?
+<?php
 $marcas = ["Saab", "Volvo", "BMW"];
 
 foreach($marcas as $marca) {
@@ -92,26 +91,12 @@ foreach($marcas as $marca) {
 ?>
 ```
 
-```
-####Foreach
-Loop para Php
-```php
-<?
-$marcas = ["Saab", "Volvo", "BMW"];
-
-foreach($marcas as $marca) {
-  echo $marca ."<br />";
-}
-?>
-```
-
-```
 ####Function
-Funciones
+
 ```php
 <?php
 
 function saluda() {
   echo " Saluda";
 }
-<?
+?>
