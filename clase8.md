@@ -82,7 +82,7 @@ $marcas = ["Saab", "Volvo", "BMW"];
 ####Foreach
 Loop para Php
 ```php
-<?
+<?php
 $marcas = ["Saab", "Volvo", "BMW"];
 
 foreach($marcas as $marca) {
