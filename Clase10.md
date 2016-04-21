@@ -36,6 +36,13 @@ echo rand(0, 100);
 ##### Ejercicio
 
 - Vamos a construir un Array (lista) con diferentes colores hexadecimales y vamos ha hacer que cada vez que el navegador se recargue pinte el color del body con un color diferente
+
+```php
+<?php
+$colores = array("posición 1", "posición 2");
+?>
+```
+
 - Ahora vamos a mezclar los 2 ejercicios anteriores, obteniendo como resultado un grid de diferentes colores. 
 
 ### Javascript
