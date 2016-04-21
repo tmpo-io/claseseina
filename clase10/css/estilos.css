@@ -6,6 +6,12 @@
 body {
   margin: 20px;
 }
+
+.container {
+	height: 100%;
+	overflow: auto;
+}
+
 .box {
 	float: left;
   width: 11%;
@@ -13,5 +19,5 @@ body {
   margin-bottom: 3%;
   background: #ddd;
   padding-top:12%;
-
+	visibility: hidden;
 }
