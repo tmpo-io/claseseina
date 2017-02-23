@@ -1,20 +1,62 @@
 
-## Ejercicios adicionales clase2
+## Clase 2
 
-### EE3
+# Repaso sesión anterior
 
-Construiremos un archivo html e insertaremos una imágen, en él. 
+- FTP.
+- Programación, lenguajes. (Compilado/Interpretado)
+- Instrucciones.
+- Tipo de dato: Cadena de texto / numero
 
-Queremos que cada vez que se recargue la página la imágen que carga sea distinta, de entre un grupo de 3.
+### Ejercicio
+
+- Crearemos un programa que al abrir la página nos pregunte nuestro nombre,
+y luego nos salude de forma personalizada.
 
 
-#### Ayuda para el ejercicio
+## Clientes y servidores
+
+- Cliente?
+- Servidor?
+
+- FTP/WWW/Email/ssh ...
+
+## Lenguajes en el cliente y lenguajes en el servidor
+
+- Javascript / php / html
+
+
+## Operadores
+
+- Que es un operador? 
+``` 
+
+- + / * > < <= >= == ===
 
 ```
-function random(inicio, fin) {
-    return Math.floor(Math.random() * fin) + inicio;
+
+
+### Ejercicio 
+
+- Tenemos una tienda y estamos en rebajas, y deseamos crear un programa
+que nos calcule un descuento fijo del 30% sobre el valor de los objetos.
+
+
+## Condicionales
+
+```javascript
+
+if (a < 5) {
+    alert('suspenso')
+} else {
+    alert('aprobado')
 }
+
 ```
 
+### Ejercicio 
 
+- Crearemos un nuevo ejercicio sobre el de la tienda pero esta vez queremos
+que el descuento sea en base al importe introducido. Mayor de 50 Euros, un descuento
+del 40%. Inferior un descuento del 20%;
 
