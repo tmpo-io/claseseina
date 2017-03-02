@@ -29,6 +29,22 @@ debe de recibir el número de fila y devolver la puerta delantera o trasera.
 El avión tiene 30 filas. Hasta la fila 15 deben de entrar por la delantera. El resto
 por la trasera
 
+## DOM
+
+Es una API que nos permite acceder de forma programática al contenido de una web. El DOM nos ofrece una instantánea de lo que el navegador está en eso momento mostrando, y nos permite des de javascript consultar y realizar modificaciones.
+
+Supongamos que en nuestro html tenemos la siguiente etiqueta
+
+```html
+<img src="assets/imagen.png" id="imagen" />
+```
+
+Des de javascript podremos  
+```js
+let imagen = document.getElementById('imagen')
+console.log(imagen.src)
+```
+
 
 ### Ejercicio 2
 
@@ -100,7 +116,8 @@ instrucciones y otro para generar elementos.
 ### Ejercicio 4
 
 Construiremos una lista con los nombres de los alumnos de la clase, y mediante un bloque
-for, iteraremos por ella, para saludar a todos los alumnos, con document.write.
+for, iteraremos por ella, para saludar a todos los alumnos, podemos agregar "html" al documento
+creando un contenedor `div` seleccionandolo con `getElementById` y añadiendole con `innerHTML`
 
 
 ### Ejercicio 5
@@ -178,19 +195,19 @@ los usuarios introduzcan.
 
 
 ```html
-<html>
-<head>
-<script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
-<script>
-$(document).ready(function(){
+...
+<input type=number id="valor1" />
+<select id="operacion">
+  <option value="suma">+</option>
+  <option value="resta">-</option>
+  <option value="multiplicacion">*</option>
+  <option value="division">/</option>
+</select>
 
-});
-</script>
-</head>
-<body>
-
-
-</body>
-</html>
-
+<input type=number id="valor2" />
+<button onclick="calcula()" />Calcula</button>
+...
 ```
+
+* Para acceder al valor que contiene un campo obteniendo su referencia lo podemos hacer con: `refcampo.value `
+
