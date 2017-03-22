@@ -22,3 +22,12 @@ Este repositorio contiene los materiales de la asignatura de Introducción a la 
 [clase6.md](clase6.md)
 
   
+#### Trucos y enlaces
+
+Código utf8 para páginas
+```php
+// html
+<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+// php
+header('Content-Type: text/html; charset=utf-8');
+```
