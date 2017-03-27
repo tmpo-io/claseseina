@@ -20,7 +20,7 @@ Este repositorio contiene los materiales de la asignatura de Introducción a la 
 
 #### Presentación Clase 6
 [clase6.md](clase6.md)
-
+[Ejercicios](ejercicios6/)
   
 #### Trucos y enlaces
 
