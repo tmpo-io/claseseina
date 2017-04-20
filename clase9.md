@@ -72,10 +72,10 @@ EL timeline es una línea de tiempo donde podemos crear conjuntos de animaciones
 
 ```javascript
 var tl = new TimelineMax();
-tl.to("#box5", 0.3, { width: "30%", backgroundColor:"#ddcc00", ease:Power1.easeIn});
-tl.to("#box6", 0.3, { width: "20%", backgroundColor:"#ff00cc", ease:Power1.easeOut});
-tl.to("#box5", 0.3, { height: 100, backgroundColor:"#ddcc00", ease:Power1.easeOut});
-tl.to("#box6", 0.3, { width: 200, backgroundColor:"#ff00cc", ease:Power1.easeOut});
+tl.to("#box5", 0.3, { width: "30%");
+tl.to("#box6", 0.3, { width: "20%", backgroundColor:"#ff00cc"});
+tl.to("#box5", 0.3, { height: 100, backgroundColor:"#ddcc00"});
+tl.to("#box6", 0.3, { width: 200, backgroundColor:"#ff00cc"});
 tl.pause();
 tl.play();
 tl.reverse();
