@@ -43,6 +43,10 @@
             <img class="lr"src="img/cel.jpg" />
         </div>
 
+        <div class="sidebar">
+            <div class="button">Click Me!</div>
+        </div>
+
         <script>
             $(document).ready(function () {
                 //PROYECTO
@@ -92,6 +96,19 @@
                         tll.reverse();
                     } else {
                         tll.play();
+                    }
+                });
+
+                //SIDEBAR
+                var tls = new TimelineMax();
+                tls.from(".sidebar", 0.7, { x:-300, ease:Power4.easeIn });
+                tls.pause();  
+
+                 $(".sidebar .button").click(function () {
+                    if (tls.progress() === 1) {
+                        tls.reverse();
+                    } else {
+                        tls.play();
                     }
                 });
 
