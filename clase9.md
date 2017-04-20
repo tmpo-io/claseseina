@@ -82,7 +82,7 @@ tl.reverse();
 ```
 
 ### staggerFrom || staggerTo
-Si le pasamos una lista de elementos nos elmina todos los elementos y nos permite modificar el delay entre ellos.
+Si le pasamos una lista de elementos nos anima todos los elementos y nos permite modificar el delay entre ellos.
 
 ```javascript
 tll.staggerFrom(".listImg img", 0.3, { scale: 1.5, opacity: 0, 0.1);
