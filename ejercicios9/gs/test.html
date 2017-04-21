@@ -71,7 +71,7 @@
                 //MENU
 
                 var tlm = new TimelineMax();
-                tlm.to(".menu .background", 0.4, {top:"0", right:"0", width: "100%", "height": "100%"});
+                tlm.to(".menu .background", 0.4, {top:"0", right:"0", width: "100%", height: "100%"});
                 tlm.to(".menu .background", 0.2, {borderRadius:0, background:"#dd00cc", autoAlpha: 0.6}, "0.2");
                 tlm.staggerFrom(".menu li", 0.2, { x:"-20px", autoAlpha: 0}, 0.05);
                 tlm.pause();
@@ -101,7 +101,7 @@
 
                 //SIDEBAR
                 var tls = new TimelineMax();
-                tls.from(".sidebar", 0.7, { x:-300, ease:Power4.easeIn });
+                tls.from(".sidebar", 0.7, { x:-300, ease:Back.easeOut.config(1.7) });
                 tls.pause();  
 
                  $(".sidebar .button").click(function () {

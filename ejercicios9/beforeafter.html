@@ -1,0 +1,66 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,900" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #eaeaea;
+            margin: 0;
+            font-family: 'Lato', sans-serif;
+            font-weight: 400;
+        }
+
+        .wp {
+            padding: 0 20px;
+            background: white;
+            width: 500px;
+            margin: auto;
+        }
+
+        .button {
+            position: relative;
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+            background: deepskyblue;
+            border: 5px solid white;
+            box-shadow: 0px 0px 0px 5px dodgerblue;
+        }
+
+        .button:after,
+        .button:before {
+            content: "";
+            position: absolute;
+            top: 35px;
+            left: 10px;
+            width: 60px;
+            height: 8px;
+            border-radius: 3px;
+            background: white;
+            transition: transform .3s;
+            transform: rotate(45deg);
+        }
+        .button:after {
+            transform: rotate(-45deg);
+        }
+        .button:hover:after,
+        .button:hover:before {
+            transform: rotate(0deg);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wp">
+        <h1>:before :after</h1>
+        <p>Pseudo elemento que nos permite insertar contenido en una página desde CSS</p>
+        <div class="button"></div>
+    </div>
+</body>
+
+</html>
