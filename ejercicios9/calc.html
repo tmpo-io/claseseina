@@ -1,0 +1,40 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,900" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #eaeaea;
+            margin: 0;
+            font-family: 'Lato', sans-serif;
+            font-weight: 400;
+        }
+        .col-fixed {
+            padding: 20px;
+            float: left;
+            width: 400px;
+            height: 1200px;
+            background: lightgoldenrodyellow;
+        }
+
+        .col-variable {
+            padding: 20px;
+            float: left;
+            width: calc(100% - 400px);
+            background: gold;
+            height: 1200px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="col-fixed"></div>
+    <div class="col-variable"></div>
+</body>
+
+</html>
