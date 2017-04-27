@@ -1,0 +1,75 @@
+<html>
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,900" rel="stylesheet">
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="greensock-js/src/uncompressed/TweenMax.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background: black;
+            font-family: 'Lato', sans-serif;
+        }
+        .menu {
+            display: block;
+            max-width: 600px;
+            margin: auto;
+            margin-top: 80px;
+        }
+        .menu li {
+            overflow: hidden;
+            height: 27px;
+            position: relative;
+            list-style: none;
+            display: inline-block;
+            margin: 0 10px;
+        }
+        .menu a {
+            text-decoration: none;
+            color: grey;
+            display: block;
+        }
+        .menu span {
+            position: absolute;
+            top: 28px;
+            left: 0;
+            display: block;
+            color: white;
+        }
+        .menu div {
+            height: 2px;
+            background: white;
+            width: 0;
+            position: absolute;
+            top: 25px;
+            left: 0;
+        }
+    </style>
+    <script>
+        $(document).ready(function () {
+            $(".menu li").hover(function () {
+                 TweenMax.to($("a", this), 0.1, { y: -40, overwrite: true}); 
+                 TweenMax.to($("span", this), 0.1, { y: -27, delay: 0.05, overwrite: true}); 
+                 TweenMax.to($("div", this), 0.2, { width: "100%", delay: 0.1, overwrite: true}); 
+            }, function () {
+                 TweenMax.to($("div", this), 0.2, { width: "0%", overwrite: true}); 
+                 TweenMax.to($("span", this), 0.2, { y: 0, delay: 0.1, overwrite: true}); 
+                 TweenMax.to($("a", this), 0.2, { y: 0, delay: 0.2, overwrite: true}); 
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <ul class="menu">
+        <li><a href="">Lorem ipsum</a><span>Lorem ipsum</span><div></div></li>
+        <li><a href="">Dolor sit</a><span>Dolor sit</span><div></div></li>
+        <li><a href="">Consectetur</a><span>Consectetur</span><div></div></li>
+        <li><a href="">Adipiscing</a><span>Adipiscing</span><div></div></li>
+        <li><a href="">Quisque elit</a><span>Quisque elit</span><div></div></li>
+    </ul>
+</body>
+</html>
