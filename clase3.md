@@ -3,6 +3,10 @@
 
 ## Repaso anteriores
 
+- Sabemos que es un cliente
+- Sabemos que es un servidor
+- Sabemos que es un protocolo
+- Sabemos que es un lenguaje de programación
 - Sabemos que es una variable
 - Sabemos que es una instrucción
 - Sabemos la diferencia entre == y ===
