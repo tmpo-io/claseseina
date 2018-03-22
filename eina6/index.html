@@ -1,0 +1,38 @@
+<html>
+  <head>
+    <style>
+      * { margin: 0; padding: 0;}
+      div {
+        border: 1px solid red;
+        width: calc(25% - 42px);
+        margin: 20px;
+        float: left;
+      }
+      div img {
+        width: 80%;
+        height: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="img1">
+      <img src="img/cat.jpg" />
+    </div>
+    <div class="img2">
+      <img src="img/dog.jpg" />
+    </div>
+    <div class="img3">
+      <img src="img/dog.jpg" />
+    </div>
+    <div class="img4">
+      <img src="img/cat.jpg" />
+    </div>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script>
+      //$('div').hide(); //igual que en css display: none;
+      //$('div').fadeIn(1200); //entrada duración 1.2s;
+      //$('div').fadeOut(1200); //salida duración 1.2s;
+      $('div img').attr("src", "img/dog.jpg"); //cambiar todas las imagenes a dog.jpg
+    </script>
+  </body>
+</html>
