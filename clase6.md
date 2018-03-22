@@ -1,89 +1,129 @@
-## Clase 6
 
-### PHP
+## Javascript
 
-A diferencia del Javascript el PHP es un lenguaje interpretado en el lado del servidor.
-- Para poder trabajar en php necesitamos tener instalado el [XAMPP](https://www.apachefriends.org/es/index.html)
-- EL xampp contiene:
-  * Apache servidor web
-  * Mysql servidor de bases de datos.
-  * El interprete de PHP
+### JQuery
 
-#### Diferencias de sintaxis entre javascript y php
-```html
+- jQuery es una librería que nos ayuda a trabajar con las distintas API de los navegadores.
+- Con jQuery podemos manipular elementos del DOM.
+
+```
+$('#elemento')
+    .html("<p>Hola</p>")
+$('#elemento')
+    .css({'color': 'rojo', 'padding-top': '10px'})
+$('.elemento')
+    .show()
+$('.elemento')
+    .hide()
+$('.elemento')
+    .fadeIn()
+$('.elemento')
+    .fadeOut()
+
+// Si el elemento es un campo de formulario.
+$('#campo').val()
+
+```
+
+De las expresiones:
+
+```
+    $('#element').css(    {'color': 'rojo'})
+       ^          ^       ^ 
+       Selector   Método  Objeto de configuración 
+```
+  
+- Los selectores siguen las mismas reglas que los de CSS (con alguna excepción)
+- Métodos hay muchos (http://jquery.com)
+
+### Eventos de Usuario
+
+Un evento es una cosa que pasa, y es programable, pe:
+
+ - Un click a un objeto.
+ - Cuando el mouse pasa por encima de algo.
+ - Al hacer scroll
+ - ... 
+ 
+jQuery unifica la forma de usar los eventos a través de los distintos navegadores:
+
+```
+$('#selector').on('click', function(){
+    // Aqui va el código que se ejecutará al hacer click
+    alert('hola')
+});
+```
+
+Tenemos la lista completa de eventos que admite jQuery aquí:
+https://api.jquery.com/category/events/
+
+
+#### Ejercicio
+
+- Vamos a crear un ejercicio que cada vez que cliquemos en el documento, (en cualquier parte) lance un mensaje. P.e. un alert
+
+- Evolucionaremos el ejercicio para que en lugar de lanzar un alert, nos escriba el mensaje en un div (previamente preparado)
+
+- Finalmente, queremos tener un contador de las veces que un usuario hace clic en el mensaje.
+
+
+#### Ejercicio Imágenes
+
+- Vamos a construir un pequeño visor de imágenes. Una imagen principal, y una lista de enlaces que nos permitan cambiar esta, al hacer click, y sin recargar la página donde estamos.
+
+
+
+### Los plugins de jQuery
+
+Los plugins de jQuery son un conjunto de instrucciones mas o menos complejas reciclables con unas funcionalidades especificas. (Players, formularios, movimientos de scroll, etc.)
+
+
+### Slick (http://kenwheeler.github.io/slick/)
+
+Pluguin para jQuery que nos permite crear players de imagenes o contenido, responsive y configurable.
+
+Para utilizar un pluguin de jQuery necesitamos incluir la jQuery y los js/css necesarios específicos del plugin.
+
+```
+<link rel="stylesheet" type="text/css" href="slick/slick.css" />
+<script src="jquery.js"></script>
+<script src="slick/slick.js"></script>
+```
+
+Necesitamos construir el html para el plugin.
+- Un div contenedor
+- Dentro del div contenedor un listado de 5 divs.
+
+
+Una vez tenemos los archivos incluidos en nuestro documento HTML vamos a inicializar el plugin.
+
+```
 <script>
-//código javascript
+$(document).ready(function () {
+  $('.contenedor').slick();
+})
 </script>
-<?php
-//código php
-?>
-```
-#### TIPS
-
-- Es necesario utilizar ; al final de línea
-- Para concatenar cadenas y variables se utiliza el . y no el +
-- Las variables tienen que empezar por $
-
- #### Imprimir contenido
-```php
-echo "cotenido ";
-```
-##### Ejercicio 1
-- Vamos a crear un listado de 9 proyectos (Imagen + titular + descripción en columnas de 3).
-- El contenido imagen, titular y descripción lo vamos a imprimir en php.
-
-#### Variables
-Las variables deben empezar con el símbolo $ y al final de línea ;.
-```php
-<?php
-$variable1 = "una variable string";
-$variable2 = 12;
-?>
 ```
 
-##### Ejercicio 2
-- Continuando la práctica anterior vamos a definir 3 variables para cada proyecto e imprimiremos el contenido anterior.
 
-#### Listas
+Para configurar el plugin Slick se le puede pasar un objeto javascript con las configuraciones especificas.
 
-Se pueden inicializar de diferentes maneras
-
-```php
-<?php
-$marcas = array("Saab", "Volvo", "BMW");
-$marcas = ["Saab", "Volvo", "BMW"];
-?>
+```
+<script>
+$(document).ready(function () {
+  settings = {
+    arrows: false,
+    centerMode: true
+  }
+  $('.contenedor').slick(settings);
+})
+</script>
 ```
 
-##### Ejercicio 3
-- Continuando la práctica anterior vamos a crear 3 listas:
-  - Títulos
-  - Imágenes
-  - Contenidos
-- Necesitamos escribir el valor de cada posición para cada proyecto.
+En la sección settings del plugin tenemos todas las posibilidades del plugin.
+http://kenwheeler.github.io/slick/#settings
 
-#### Foreach
-Loop para Php
-```php
-<?php
-$marcas = ["Saab", "Volvo", "BMW"];
+### Ejercicio
 
-foreach($marcas as $marca) {
-  echo $marca ."<br />";
-}
-?>
-```
-##### Ejercicio 4
-- Continuando la práctica anterior vamos a reemplazar el listado de proyectos por un loop.
-
-#### Function
-
-```php
-<?php
-
-function saluda() {
-  echo " Saluda";
-}
-```
-##### Ejercicio 5
-- Continuando la práctica anterior vamos a crear una función que si le pasamos el nombre de una imagen nos escriba el tag <img />.
+- Crear un listado de noticias que cada una de ellas tenga un player.
+- Crear una cabecera de fotografías con un texto que pasen automáticamente.
