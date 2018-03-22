@@ -1,7 +1,7 @@
 <html>
     <head>
         <link href="https://fonts.googleapis.com/css?family=Lato:400,900" rel="stylesheet">
-        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+        <script src="js/jquery-3.2.1.js"></script>
         <script src="greensock-js/src/uncompressed/TweenMax.js"></script>
         <link rel="stylesheet" type="text/css" media="all" href="css/estils.css">
     </head>
@@ -58,7 +58,7 @@
                 tl.to(".project img", 0.6, { opacity:1, ease:Power4.easeOut}, "1.2");
                 tl.to(".project h1", 0.3, { opacity:1, x:"0%", ease:Power4.easeOut}, "1.2");
                 tl.to(".project p", 0.3, { opacity:1, x:"0%", delay:0.2, ease:Power4.easeOut}, "1.2");
-                tl.pause();                
+                tl.pause();
 
                 $(".project").click(function () {
                     if (tl.progress() === 1) {
@@ -89,7 +89,7 @@
                 tll.from(".listImg", 0.4, { scale:0.3 });
                 tll.staggerFrom(".listImg .fr", 0.3, { x:"-200%", rotation: "180deg", scale: 1.5, opacity: 0, ease: Back.easeOut.config(1.7)}, 0.1);
                 tll.staggerFrom(".listImg .lr", 0.3, { x:"+200%", rotation: "180deg", scale: 1.5, opacity: 0, ease: Back.easeOut.config(1.7)}, 0.1);
-                tll.pause();  
+                tll.pause();
 
                  $(".listImg").click(function () {
                     if (tll.progress() === 1) {
@@ -102,7 +102,7 @@
                 //SIDEBAR
                 var tls = new TimelineMax();
                 tls.from(".sidebar", 0.7, { x:-300, ease:Back.easeOut.config(1.7) });
-                tls.pause();  
+                tls.pause();
 
                  $(".sidebar .button").click(function () {
                     if (tls.progress() === 1) {

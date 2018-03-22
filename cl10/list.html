@@ -53,12 +53,12 @@
     <script>
         $(document).ready(function () {
             $(".list a").hover(function () {
-                 TweenMax.to($("div", this), 0.2, { y: "0%", width:"100%", overwrite: true}); 
+                 TweenMax.to($("div", this), 0.2, { y: "0%", width:"100%", overwrite: true});
                  TweenMax.to($("span", this), 0.2, { top: "50%", opacity:1, overwrite: true, delay: 0.1, ease: Back.easeOut.config(1.7)}); 
             }, function () {
-                TweenMax.to($("div", this), 0.1, { y: "-100%", width:"80%", delay:0.1, overwrite: true}); 
-                 TweenMax.to($("span", this), 0.2, { top: "120%", opacity:0, overwrite: true}); 
-                
+                TweenMax.to($("div", this), 0.1, { y: "-100%", width:"80%", delay:0.1, overwrite: true});
+                 TweenMax.to($("span", this), 0.2, { top: "120%", opacity:0, overwrite: true});
+
             });
         });
     </script>

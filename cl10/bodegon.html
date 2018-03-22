@@ -9,7 +9,9 @@
             padding: 0;
             box-sizing: border-box;
         }
-
+        body {
+          background: black;
+        }
         .bodegon {
             max-width: 1000px;
             margin: auto;
@@ -25,7 +27,7 @@
         $(document).ready(function () {
             $(".bodegon").on("mousemove", function (e) {
                 var speed = 80;
-                var offset = $(".bodegon").offset();   
+                var offset = $(".bodegon").offset();
                 var width = $(".bodegon").width();
                 var height = $(".bodegon").height();
                 var relX = e.pageX - (offset.left + (width/2));
@@ -33,7 +35,7 @@
                 var avgX = relX/width;
                 var avgY = relY/height;
 
-                TweenMax.to(".bodegon", 0.5, { 
+                TweenMax.to(".bodegon", 0.5, {
                     x: (avgX*speed),
                     y: (avgY*speed),
                     rotation: ((avgX*avgY)*(speed/3)),
@@ -42,7 +44,7 @@
                 })
             });
             $(".bodegon").on("mouseout", function (e) {
-                TweenMax.to(".bodegon", 2, { 
+                TweenMax.to(".bodegon", 2, {
                     x: 0,
                     y: 0,
                     rotation: 0,
