@@ -1,0 +1,59 @@
+<html>
+  <head>
+    <style>
+      * { margin: 0; padding: 0; box-sizing: border-box;}
+      .container {
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+      }
+      div {
+        transition: all 0.3s;
+        border: 1px solid red;
+        width: calc(25% - 42px);
+      }
+      div.extraWidth {
+        width: 50%;
+      }
+      div.color {
+        background: red;
+      }
+      div img {
+        width: 80%;
+        height: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="img1">
+        <img src="img/cat.jpg" />
+      </div>
+      <div class="img2">
+        <img src="img/dog.jpg" />
+      </div>
+      <div class="img3 extraWidth">
+        <img src="img/dog.jpg" />
+      </div>
+      <div class="img4">
+        <img src="img/cat.jpg" />
+      </div>
+    </div>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script>
+      $(".img4").addClass('color');
+      $(".img2").addClass('extraWidth');
+      setTimeout(function () {
+        $(".img2").removeClass('extraWidth');
+      },1500);
+      setInterval(function () {
+        $(".img3").toggleClass('extraWidth');
+      },1500);
+    </script>
+  </body>
+
+
+
+
+
+</html>

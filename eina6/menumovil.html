@@ -1,0 +1,54 @@
+<html>
+  <head>
+    <style>
+      * { margin: 0; padding: 0; box-sizing: border-box;}
+      .menu {
+        transform: translateX(-100%);
+        transition: transform 0.5s;
+        width: 100%;
+        background: #ddd;
+      }
+      .menu.open {
+        transform: translateX(0);
+      }
+      .menu li {
+        border-bottom: 1px solid black;
+        padding: 20px;
+      }
+      .menu li a {
+        color: black;
+      }
+      .btn-menu {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        background: black;
+        padding: 20px;
+        color: white;
+        font-size: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <ul class="menu">
+      <li><a href="">Link 1</a></li>
+      <li><a href="">Link 2</a></li>
+      <li><a href="">Link 3</a></li>
+      <li><a href="">Link 4</a></li>
+      <li><a href="">Link 5</a></li>
+    </ul>
+    <button class="btn-menu">x</button>
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script>
+      $('.btn-menu').on('click', function () {
+        $('.menu').toggleClass('open');
+      })
+    </script>
+
+
+
+
+
+  </body>
+</html>

@@ -1,0 +1,67 @@
+<html>
+  <head>
+    <style>
+      * { margin: 0; padding: 0; box-sizing: border-box;}
+      body {
+        min-height: 99999px;
+      }
+      div {
+        width: 300px;
+        height: 200px;
+        bordeR: 1px solid blue;
+      }
+      img {
+        width: 50%;
+        height: auto;
+      }
+      .fixed {
+        position: fixed;
+        top: 0;
+        right: 0;
+        background: grey;
+        height: 20px;
+      }
+      .absolute {
+        background: yellow;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+      }
+      .relative {
+        position: relative;
+      }
+    </style>
+  </head>
+  <body>
+      <div class="relative">
+        <img src="img/cat.jpg" />
+      </div>
+      <div class="relative">
+        <img src="img/cat.jpg" />
+      </div>
+      <div class="relative">
+        <img src="img/cat.jpg" />
+      </div>
+      <div class="relative">
+        <div class="absolute">
+          <img src="img/dog.jpg" />
+        </div>
+      </div>
+      <div class="relative">
+        <img src="img/cat.jpg" />
+      </div>
+      <div class="relative">
+        <img src="img/cat.jpg" />
+      </div>
+      <div class="absolute">
+        <img src="img/dog.jpg" />
+      </div>
+      <div class="fixed">
+      </div>
+  </body>
+
+
+
+
+
+</html>

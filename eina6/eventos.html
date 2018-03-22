@@ -7,6 +7,13 @@
         width: calc(25% - 42px);
         margin: 20px;
         float: left;
+        transition: all 0.5s;
+      }
+      div.extraWidth {
+        width: calc(50% - 42px);
+      }
+      div.invisible {
+        opacity: 0;
       }
       div img {
         width: 80%;
@@ -29,21 +36,17 @@
     </div>
     <script src="js/jquery-3.3.1.min.js"></script>
     <script>
-      //$('div').hide(); //igual que en css display: none;
-      //$('div').fadeIn(1200); //entrada duración 1.2s;
-      //$('div').fadeOut(1200); //salida duración 1.2s;
-      $('div img').attr("src", "img/dog.jpg"); //cambiar todas las imagenes a dog.jpg
-
-      $('div').css("text-align", "center"); //cambio de 1 propiedad css
-      $('div').css("background", "blue");
-
-      $('div').css({
-        "text-align": "center",
-        "background": 'blue',
-        "padding": "20px"
-      });
-
-
+      $('.img2').on('click', function () {
+        $('.img2').toggleClass('extraWidth');
+      })
+      $('.img3').on('click', function () {
+        $('.img3').toggleClass('invisible');
+      })
     </script>
+
+
+
+
+
   </body>
 </html>
