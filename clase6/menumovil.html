@@ -1,24 +1,23 @@
 <html>
   <head>
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0">
     <style>
       * { margin: 0; padding: 0; box-sizing: border-box;}
       .menu {
-        transform: translateX(-100%);
-        transition: transform 0.5s;
+        transition: transform 0.3s;
         width: 100%;
         background: #ddd;
       }
-      .menu.open {
-        transform: translateX(0);
-      }
       .menu li {
-        border-bottom: 1px solid black;
+        display: inline-block;
+        border: 1px solid black;
         padding: 20px;
       }
       .menu li a {
         color: black;
       }
       .btn-menu {
+        display: none;
         position: absolute;
         top: 20px;
         right: 20px;
@@ -26,6 +25,21 @@
         padding: 20px;
         color: white;
         font-size: 20px;
+      }
+      @media (max-width:768px){
+        .menu {
+          transform: translateX(-100%);
+        }
+        .menu li {
+          border-bottom: 1px solid black;
+          display: block;
+        }
+        .menu.open {
+          transform: translateX(0);
+        }
+        .btn-menu {
+          display: block;
+        }
       }
     </style>
   </head>
