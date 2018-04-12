@@ -1,11 +1,17 @@
 <html>
     <head>
         <style>
+            .slick-slide {
+                height: auto !important;
+            }
             body {
                 font-family:Arial, Helvetica, sans-serif;
                 margin: 0;
                 padding: 0;
                 box-sizing: border-box;
+            }
+            .header {
+                margin-bottom: 40px;
             }
             .container {
                 max-width: 800px;
@@ -32,9 +38,34 @@
                 font-size: 14px;
                 line-height: 1.2;
             }
+            .arrow {
+                top: 50%;
+                position: absolute;
+                background: red;
+                border-radius: 50%;
+                width: 40px;
+                height: 40px;
+            }
+            .arrow.next {
+                left: -60px;
+            }
+            .arrow.prev {
+                right: -60px;
+            }
         </style>
     </head>
     <body>
+        <div class="header">
+            <div>
+                <img src="img/h1.jpg" />
+            </div>
+            <div>
+                <img src="img/h2.jpg" />
+            </div>
+            <div>
+                <img src="img/h3.jpg" />
+            </div>
+        </div>
         <div class="container">
             <div class="item">
                 <img src="img/p1.jpg" />
@@ -67,7 +98,18 @@
             $(".container").slick({
                 slidesToShow: 3,
                 slidesToScroll: 1,
-                autoplay: true
+                autoplay: false,
+                prevArrow: '<div class="arrow prev"></div>',
+                nextArrow: '<div class="arrow next"></div>',
+
+            });
+            $(".header").slick({
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                autoplay: true,
+                speed: 2000,
+                fade: true,
+                arrow: false
             });
         </script>
     </body>
