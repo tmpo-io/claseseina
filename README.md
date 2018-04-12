@@ -20,18 +20,7 @@ Este repositorio contiene los materiales de la asignatura de Introducción a la 
 
 #### Presentación Clase 6
 [clase6.md](clase6.md)
-[Ejercicios](ejercicios6/)
+[Ejercicios](clase6/)
 
 #### Presentación Clase 7
 [clase7.md](clase7.md)
-[Ejercicios](ejercicios7/)
-  
-#### Trucos y enlaces
-
-Código utf8 para páginas
-```php
-// html
-<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
-// php
-header('Content-Type: text/html; charset=utf-8');
-```
