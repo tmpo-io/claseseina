@@ -1,0 +1,30 @@
+<html>
+    <!--https://github.com/tmpo-io/claseseina/blob/master/clase7.md-->
+    <head>
+    </head>
+    <style>
+        .boton { border: 1px solid red; }
+        .contenedor {
+            opacity: 0;
+            transition: opacity 0.5s; 
+        }
+        .contenedor.show {
+            opacity:1 ;
+        }
+    </style>
+    <body>
+        <a class="boton">Click me!</a>
+        <div class="contenedor">
+            <h1>Contenido invisible!</h1>
+        </div>
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <script>
+            $('.boton').on('mouseover', function () {
+                $('.contenedor').addClass("show");
+            })
+            $('.boton').on('mouseout', function () {
+                $('.contenedor').removeClass("show");
+            })
+        </script>
+    </body>
+</html>

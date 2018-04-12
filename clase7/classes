@@ -1,0 +1,15 @@
+<div class="contenedor"></div>
+.contendor {
+
+}
+
+
+<div class="contenedor">
+    <div class="elemento2"></div>
+</div>
+.contendor .elemento2
+
+
+.contenedor.show
+<div class="contenedor show">
+</div>
