@@ -17,7 +17,7 @@ Una vez tenemos los archivos incluidos en nuestro documento HTML vamos a inicial
 ```javascript
 <script>
 $(document).ready(function () {
-  $('.contenedor').vegas();
+  $('body').vegas();
 })
 </script>
 ```
