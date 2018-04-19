@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <style>
+            body {
+                margin: 40px
+            }
+            .box {
+                border-radius: 0;
+                width: 200px;
+                height: 200px;
+                background: grey;
+                transition: all 1s;
+            }
+            .large {
+                border-radius: 50%;
+                width: 400px;
+                height: 400px;
+                background: blueviolet;
+            }
+
+            nav {
+                margin-top: 100px;
+            }
+            a {
+                display: inline-block;
+                padding: 20px;
+                color: black;
+                text-decoration: none;
+                transition: all 0.3s;
+            }
+            a:hover {
+                background-color: black;
+                color: white;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="box"></div>
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <script>
+            $('.box').click(function () {
+                $('.box').toggleClass('large');
+            })
+        </script>
+        <nav>
+            <a href="">Link 1</a>
+            <a href="">Link 2</a>
+            <a href="">Link 3</a>
+            <a href="">Link 4</a>
+            <a href="">Link 5</a>
+            <a href="">Link 6</a>
+        </nav>
+    </body>
+</html>
