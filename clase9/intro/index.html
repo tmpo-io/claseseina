@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <style>
+            .box {
+                width: 300px;
+                height: 300px;
+                background: goldenrod;
+                margin: 20px auto;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="box" id="box1"></div>
+        <div class="box" id="box2"></div>
+        <div class="box" id="box3"></div>
+        <div class="box" id="box4"></div>
+        <div class="box" id="box5"></div>
+        <div class="box" id="box6"></div>
+
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <script src="js/greensock-js/src/minified/TweenMax.min.js"></script>
+        <script>
+            TweenMax.to('#box1', 1, {
+                width:900,
+                ease: Elastic.easeOut.config(1, 0.3),
+                repeat: -1,
+                yoyo: true
+            });
+            TweenMax.from('#box2', 2, {
+                height:0,
+                ease: Back.easeOut.config(1.7),
+                repeat: 100,
+                yoyo: true
+            });
+        </script>
+        
+    </body>
+</html>
