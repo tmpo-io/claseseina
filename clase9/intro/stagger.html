@@ -10,11 +10,6 @@
                 height: 300px;
                 background: goldenrod;
             }
-            .box:first-child {
-                position: absolute;
-                top: 320px;
-                left: 20px;
-            }
         </style>
     </head>
     <body>
@@ -36,9 +31,7 @@
             TweenMax.staggerFrom('.box', 1, {
                 height:0,
                 ease: Back.easeOut.config(1.7),
-                transformOrigin: "50% 50%",
-                rotation: 90,
-                repeat: 100,
+                repeat: 5,
                 yoyo: true
             }, 0.2);
         </script>

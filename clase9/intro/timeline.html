@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <style>
+            .container {
+                display: flex;
+                justify-content: space-between;
+            }
+            .box {
+                width: 100px;
+                height: 300px;
+                background: goldenrod;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="box" id="box1"></div>
+            <div class="box" id="box2"></div>
+            <div class="box" id="box3"></div>
+            <div class="box" id="box4"></div>
+            <div class="box" id="box5"></div>
+            <div class="box" id="box6"></div>
+            <div class="box" id="box7"></div>
+            <div class="box" id="box8"></div>
+            <div class="box" id="box9"></div>
+            <div class="box" id="box10"></div>
+        </div>
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <script src="js/greensock-js/src/minified/TweenMax.min.js"></script>
+        <script>
+            var myTimeLine = new TimelineMax({repeat:-1, yoyo:true});
+            myTimeLine.from('#box1', 0.3, {height: 0});
+            myTimeLine.from('#box2', 0.3, {width: 0});
+            myTimeLine.from('#box3', 0.3, {rotation: 180});
+            myTimeLine.to('#box1', 0.3,{height: 200},"step1");
+            myTimeLine.to('#box4', 0.3,{height: 10},"step1");
+            myTimeLine.to('#box5', 0.3,{height: 40},"step1");
+            myTimeLine.to('#box6', 0.3,{width: 100, ease: Elastic.easeOut});
+            myTimeLine.stop();
+
+            $("#box10").click(function () {
+                myTimeLine.resume();
+            })
+        </script>
+        
+    </body>
+</html>

@@ -1,0 +1,141 @@
+<html>
+
+<head>
+    <style>
+       * { margin: 0; padding: 0; box-sizing: border-box;}
+       .trigger {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: greenyellow;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+       }
+       .trigger_close {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: greenyellow;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+       }
+       .menu {
+            position: absolute;
+           position: fixed;
+           top: 0;
+           left: 0;
+           display: flex;
+           width: 100%;
+           height: 100%;
+           background: greenyellow;
+           z-index: 100;
+       }
+       .menu ul {
+            margin: auto;
+            list-style: none;
+       }
+       .menu a {
+           color: black;
+           text-align: center;
+           font-size: 30px;
+           display: block;
+           padding: 20px;
+       }
+    </style>
+</head>
+
+<body>
+    <header>
+        <button class="trigger">
+            X
+        </button>
+        <nav class="menu" id="menu">
+            <button class="trigger_close">
+                X
+            </button>
+            <ul>
+                <li>
+                    <a href="">Home</a>
+                </li>
+                <li>
+                    <a href="">Sección 1</a>
+                </li>
+                <li>
+                    <a href="">Sección 2</a>
+                </li>
+                <li>
+                    <a href="">Sección 3</a>
+                </li>
+                <li>
+                    <a href="">Sección 4</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h1>Titular 1</h1>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eget dapibus magna. Nam orci arcu, consequat a finibus et, molestie
+            vitae arcu. Donec placerat sapien odio, vel ultrices eros faucibus ac. Praesent tempor imperdiet ullamcorper.
+            Suspendisse gravida accumsan interdum. Donec erat leo, mattis non scelerisque vel, malesuada maximus ante. Mauris
+            ut aliquam nunc. Ut vestibulum nibh eu purus consectetur, vel venenatis metus facilisis. Duis convallis augue
+            ac vestibulum tempus.
+        </p>
+        <p>
+            Vestibulum imperdiet quam quis rutrum porta. Donec eu luctus justo, eget faucibus risus. Pellentesque pharetra nulla eu justo
+            venenatis, in sollicitudin est sollicitudin. Nulla eu purus non elit ullamcorper blandit. Morbi rutrum lacinia
+            mi, non viverra tortor iaculis vel. Cras non ligula id quam ornare hendrerit at porta ligula. Donec eu arcu turpis.
+            Cras vitae ex quis augue sagittis porta eget eget nisl. Aliquam accumsan semper vestibulum. Vestibulum gravida
+            magna erat, feugiat consequat nulla finibus eu. Etiam blandit massa ut justo sagittis ornare. Nunc dapibus nulla
+            sed metus suscipit, sit amet bibendum nulla ultricies. Duis id vestibulum nibh, pellentesque facilisis neque.
+            Donec vestibulum a tellus sit amet ultricies. Aenean blandit faucibus nisl nec tempus. Morbi laoreet porttitor
+            semper.
+        </p>
+        <p>
+            Pellentesque accumsan justo ante, sit amet ultricies nisi faucibus ultrices. Nulla facilisi. Morbi eleifend vestibulum justo
+            non molestie. Donec in eleifend nisi. Sed convallis turpis id justo tincidunt, in tempor ex convallis. Fusce
+            consequat nec odio ac consequat. Praesent hendrerit massa vel lectus varius, in ornare enim fringilla.
+        </p>
+        <p>
+            Vivamus dictum, mi eleifend tempus imperdiet, ex turpis imperdiet mauris, ut porta est diam eget ante. Aliquam tristique
+            nisi eu nisl lobortis, nec suscipit metus dapibus. Sed condimentum, lectus eget maximus volutpat, lorem felis
+            rhoncus risus, a volutpat erat eros et sapien. Nam sodales imperdiet purus dapibus vehicula. Etiam ac tellus
+            nec ipsum fermentum posuere. Fusce lacus eros, mattis non nunc convallis, auctor interdum mi. Aliquam eu magna
+            at purus tempus cursus eu sit amet justo. Praesent tempor lobortis enim eget euismod. Integer vitae tortor ut
+            dolor commodo rhoncus et at arcu.
+        </p>
+        <p>
+            Vestibulum eu pellentesque nibh. Phasellus lobortis arcu odio, at porttitor risus viverra in. Suspendisse commodo, quam vitae
+            ultricies sollicitudin, orci neque dictum eros, vel imperdiet mi elit sit amet quam. Nunc vulputate, orci eu
+            dapibus porta, massa sem vehicula eros, et tempus tortor tortor sit amet urna. Vivamus sed iaculis turpis, nec
+            egestas sem. Vivamus dapibus dictum turpis, in vehicula lectus hendrerit sit amet. Morbi accumsan consectetur
+            neque id fringilla. Phasellus in venenatis lacus, vel eleifend massa. Class aptent taciti sociosqu ad litora
+            torquent per conubia nostra, per inceptos himenaeos. Suspendisse quis risus vel nibh tempor vulputate. Proin
+            ut sem turpis. Praesent in volutpat orci.
+        </p>
+    </section>
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/greensock-js/src/minified/TweenMax.min.js"></script>
+    <script>
+        $(".trigger").click(function () {
+            TweenMax.to('#menu', 0.6, {
+                y: "0%",
+                override: true,
+                ease: Back.easeOut.config(1.7),
+            });
+        });
+        $(".trigger_close").click(function () {
+            TweenMax.to('#menu', 0.6, {
+                y: "-100%",
+                override: true,
+                ease: Back.easeOut.config(1.7),
+            });
+        });
+    </script>
+
+</body>
+
+</html>
