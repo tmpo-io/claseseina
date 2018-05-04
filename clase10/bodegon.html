@@ -1,0 +1,65 @@
+<html>
+
+<head>
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="greensock-js/src/uncompressed/TweenMax.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+          background: white;
+        }
+        .bodegon {
+            max-width: 1000px;
+            margin: auto;
+            margin-top: 40px;
+        }
+
+        .bodegon img {
+            width: 100%;
+            height: auto;
+        }
+    </style>
+    <script>
+        $(document).ready(function () {
+            $(".bodegon").on("mousemove", function (e) {
+                var speed = 80;
+                var offset = $(".bodegon").offset();
+                var width = $(".bodegon").width();
+                var height = $(".bodegon").height();
+                var relX = e.pageX - (offset.left + (width/2));
+                var relY = e.pageY - (offset.top + (height/2));
+                var avgX = relX/width;
+                var avgY = relY/height;
+
+                TweenMax.to(".bodegon", 0.5, {
+                    x: (avgX*speed),
+                    y: (avgY*speed),
+                    rotation: ((avgX*avgY)*(speed/3)),
+                    overwrite: true,
+                    ease: Back.easeOut.config(1.7)
+                })
+            });
+            $(".bodegon").on("mouseout", function (e) {
+                TweenMax.to(".bodegon", 2, {
+                    x: 0,
+                    y: 0,
+                    rotation: 0,
+                    overwrite: true,
+                    ease: Back.easeOut.config(1.7)
+                })
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div class="bodegon">
+        <img src="img/bodegon.jpg" />
+    </div>
+</body>
+
+</html>

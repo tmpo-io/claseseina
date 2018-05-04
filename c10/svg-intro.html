@@ -1,0 +1,80 @@
+<html>
+
+<head>
+    <style>
+        svg {
+            display: block;
+            width: 60%;
+            margin: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 646 720.4"
+        style="enable-background:new 0 0 646 720.4;" xml:space="preserve">
+        <style type="text/css">
+            .st0 {
+                fill: #FF8000;
+                stroke: #000000;
+                stroke-miterlimit: 10;
+            }
+
+            .st1 {
+                fill: #FFE610;
+                stroke: #000000;
+                stroke-miterlimit: 10;
+            }
+
+            .st2 {
+                fill: #C2000B;
+                stroke: #000000;
+                stroke-miterlimit: 10;
+            }
+
+            .st3 {
+                fill: #26120B;
+                stroke: #000000;
+                stroke-miterlimit: 10;
+            }
+        </style>
+        <g id="b1">
+            <polygon class="st0" points="345.7,686 182.4,719.8 71.4,595.3 123.7,437 287,403.1 398,527.6 	" />
+        </g>
+        <g id="b2">
+            <path class="st1" d="M633.5,453.5H410c-6.6,0-12-5.4-12-12V218c0-6.6,5.4-12,12-12h223.5c6.6,0,12,5.4,12,12v223.5
+                C645.5,448.1,640.1,453.5,633.5,453.5z" />
+        </g>
+        <g id="b3">
+            <rect id="fdsdfdsf" x="0.5" y="0.5" class="st2" width="333.7" height="333.7" />
+            <polygon class="st3" points="498.4,191.4 448.2,42.3 552.2,-75.7 706.4,-44.6 756.6,104.5 652.6,222.5 	" />
+        </g>
+    </svg>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/greensock-js/src/minified/TweenMax.min.js"></script>
+    <script>
+        TweenMax.to("#b1", 0.6, {opacity: 0, repeat:10})
+        TweenMax.to(
+            "#b2",
+            1,
+            {
+                rotation: 360,
+                repeat:-1,
+                ease: Linear.easeNone,
+                transformOrigin: "50% 50%"
+            }
+        )
+        /*
+        rotation: 360
+        opacity: 1
+        x: 100 // horizontal
+        y: 100 //vertical
+        repeat: 0
+        scale: por defecto 1, 0 a 10000
+        scaleX:
+        scaleY:
+        fill: red    
+        */
+    </script>
+</body>
+</html>
